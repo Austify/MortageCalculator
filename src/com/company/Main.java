@@ -22,7 +22,7 @@ public class Main {
 
         double mortgage =  principal * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate,numberOfPayments))
                 / (Math.pow(1 + monthlyInterestRate, numberOfPayments) - 1);
-        String mortgageFormatted = NumberFormat.getNumberInstance().format(mortgage);
+        String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
         System.out.println("Mortgage is :" + mortgageFormatted);
     }
 }
